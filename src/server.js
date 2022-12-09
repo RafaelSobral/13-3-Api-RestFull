@@ -1,12 +1,12 @@
 const express = require('express')
-//const path = require('path')
+const path = require('path')
 
-// const db = require('./databese')
-const routes = require('./routes')
+const db = require('./database/db')
+const routes = require('./routes/index.js')
 
 const app = express()
 
-// db.connect()
+db.connect
 
 app.use(express.urlencoded({ extended: true }))
 
