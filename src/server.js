@@ -1,12 +1,12 @@
 const express = require('express')
-const path = require('path')
+// const path = require('path')
 
 const db = require('./database/db')
-const routes = require('./routes/index.js')
+const routes = require('./routes/index')
 
 const app = express()
 
-db.connect
+// db.mongoose()
 
 app.use(express.urlencoded({ extended: true }))
 
